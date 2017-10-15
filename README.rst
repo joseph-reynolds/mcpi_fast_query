@@ -1,4 +1,4 @@
-minecraft-pi-fast-query
+## minecraft-pi-fast-query
 
 Project to speed up queries from the Minecraft Pi edition.
 
@@ -37,12 +37,21 @@ A peak of over 5000 blocks per second can be achieved
 if you are willing to use multiple threads and
 receive results in a non-predictable sequence.
 
+The code is in mcpi_fast_query/mcpi_fast_query.py.
+I've make it packageable as a Python package,
+but do not intend to ship it that way.  (See my intention below.)
+
+For details, read the code, ... or stay tuned.
+
+
 My intention
 
 I intend to massage this code into an existing Minecraft Pi library
 such as picraft.
 I think the single-threaded technique will be relatively easy
 to incorporate.
+See the prototype alt_picraft_* functions. 
+
 If possible, I would also like an option to
 boost performance using multiple threads.
 When that is done, I intend to end this project.
@@ -50,7 +59,7 @@ All I want is to be able to query blocks quickly.
 
 
 Reference
-
+ - https://www.raspberrypi.org/forums/viewtopic.php?f=32&t=194033
  - https://minecraft.net/en-us/edition/pi/
  - http://www.stuffaboutcode.com/p/minecraft.html
  - https://github.com/waveform80/picraft
